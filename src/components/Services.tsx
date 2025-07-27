@@ -15,51 +15,51 @@ const Services = () => {
   const services = [
     {
       icon: Building2,
-      title: "Office Cleaning",
-      description: "Daily, weekly, or monthly cleaning for corporate offices and business centers."
-    },
-    {
-      icon: Store,
-      title: "Retail Spaces",
-      description: "Specialized cleaning for retail stores, showrooms, and customer-facing areas."
-    },
-    {
-      icon: Hospital,
-      title: "Medical Facilities",
-      description: "Sanitization and cleaning services for healthcare and medical offices."
-    },
-    {
-      icon: GraduationCap,
-      title: "Educational Centers",
-      description: "Comprehensive cleaning for schools, universities, and training facilities."
-    },
-    {
-      icon: Warehouse,
-      title: "Industrial Cleaning",
-      description: "Heavy-duty cleaning for warehouses, manufacturing, and industrial spaces."
+      title: "Commercial Office Cleaning",
+      description: "Professional janitorial services for offices and business centers with flexible daily, weekly, or biweekly schedules."
     },
     {
       icon: Home,
-      title: "Post-Construction",
-      description: "Detailed cleanup after construction, renovation, or remodeling projects."
+      title: "Post-Construction Cleanup",
+      description: "Detailed cleanup after construction, renovation, or remodeling projects to get your space move-in ready."
+    },
+    {
+      icon: Store,
+      title: "Airbnb Turnover Cleaning",
+      description: "Quick, thorough turnovers for short-term rental properties to ensure 5-star guest experiences."
+    },
+    {
+      icon: Droplets,
+      title: "High-Touch Disinfection",
+      description: "Specialized sanitization for restrooms, kitchens, and high-traffic areas for health and safety."
+    },
+    {
+      icon: Warehouse,
+      title: "Trash Removal & Debris Pickup",
+      description: "Comprehensive waste management and debris removal services for clean, organized spaces."
+    },
+    {
+      icon: RotateCcw,
+      title: "Flexible Scheduling",
+      description: "Customizable cleaning plans with daily, weekly, and biweekly options to fit your business needs."
     }
   ];
 
   const specialServices = [
     {
+      icon: Hospital,
+      title: "Licensed & Insured",
+      description: "Fully licensed and insured with comprehensive coverage for your peace of mind."
+    },
+    {
+      icon: GraduationCap,
+      title: "MBE Certification",
+      description: "Maryland Minority Business Enterprise certification pending - supporting local diversity."
+    },
+    {
       icon: Sparkles,
-      title: "Deep Cleaning",
-      description: "Comprehensive, detailed cleaning for special occasions or seasonal maintenance."
-    },
-    {
-      icon: RotateCcw,
-      title: "Carpet & Upholstery",
-      description: "Professional carpet cleaning and upholstery maintenance services."
-    },
-    {
-      icon: Droplets,
-      title: "Disinfection Services",
-      description: "Advanced sanitization and disinfection for health and safety compliance."
+      title: "eMMA Vendor Ready",
+      description: "Registered eMMA vendor (SUP1080473) and DUNS certified (139885992) for government contracts."
     }
   ];
 
@@ -94,11 +94,11 @@ const Services = () => {
         <div className="bg-gradient-to-r from-navy to-clean-blue rounded-2xl p-8 md:p-12">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Specialized Services
+              Certifications & Credentials
             </h3>
             <p className="text-white/90 text-lg max-w-2xl mx-auto">
-              Beyond our standard cleaning services, we offer specialized solutions 
-              for unique requirements and exceptional situations.
+              ClearSpace Pros LLC maintains all necessary certifications and credentials 
+              to serve commercial clients with confidence and compliance.
             </p>
           </div>
 

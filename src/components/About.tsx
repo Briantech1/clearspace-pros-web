@@ -21,16 +21,16 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-clean-gray mb-6 leading-relaxed">
-              ClearSpace Pros has been setting the standard for commercial cleaning excellence 
-              for over 15 years. We understand that a clean workspace isn't just about 
-              appearance—it's about creating a healthy, productive environment for your team 
-              and making the right impression on your clients.
+              ClearSpace Pros LLC is a professional, owner-operated commercial cleaning company 
+              based in Maryland. We specialize in recurring janitorial services for offices, 
+              clinics, Airbnb properties, and post-construction sites with responsive, 
+              reliable service and attention to detail.
             </p>
             
             <p className="text-lg text-clean-gray mb-8 leading-relaxed">
-              Our trained professionals use state-of-the-art equipment and eco-friendly 
-              products to deliver consistent, reliable results. From small offices to 
-              large corporate facilities, we customize our services to meet your specific needs.
+              Our team is committed to helping businesses maintain a consistent, professional 
+              clean that reflects their brand. We offer flexible scheduling with daily, weekly, 
+              and biweekly plans to meet your specific needs across Baltimore County and surrounding Maryland regions.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

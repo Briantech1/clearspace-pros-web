@@ -42,10 +42,10 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button size="lg" className="bg-fresh-green hover:bg-fresh-green/90 text-white text-lg px-8 py-4 h-auto">
-              Get Free Estimate
+              Request a Quote
             </Button>
             <Button size="lg" variant="outline" className="text-white border-white/30 hover:bg-white/10 text-lg px-8 py-4 h-auto">
-              Call (555) 123-4567
+              Call (443) 214-2467
             </Button>
           </div>
 
@@ -56,11 +56,11 @@ const Hero = () => {
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle className="w-6 h-6 text-fresh-green" />
-              <span className="text-white/90">24/7 Availability</span>
+              <span className="text-white/90">Owner-Operated</span>
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle className="w-6 h-6 text-fresh-green" />
-              <span className="text-white/90">Eco-Friendly Products</span>
+              <span className="text-white/90">Flexible Scheduling</span>
             </div>
           </div>
         </div>

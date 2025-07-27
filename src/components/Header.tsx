@@ -10,7 +10,7 @@ const Header = () => {
             <span className="text-white font-bold text-lg">CS</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-navy">ClearSpace Pros</h1>
+            <h1 className="text-xl font-bold text-navy">ClearSpace Pros LLC</h1>
             <p className="text-xs text-clean-gray">Professional Cleaning</p>
           </div>
         </div>
@@ -26,15 +26,15 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4 text-sm">
             <div className="flex items-center space-x-1 text-navy">
               <Phone className="w-4 h-4" />
-              <span>(555) 123-4567</span>
+              <span>(443) 214-2467</span>
             </div>
             <div className="flex items-center space-x-1 text-navy">
               <Mail className="w-4 h-4" />
-              <span>info@clearspacepros.com</span>
+              <span>connect@clearspacepros.com</span>
             </div>
           </div>
           <Button className="bg-gradient-accent hover:opacity-90 transition-opacity">
-            Get Free Quote
+            Request a Quote
           </Button>
         </div>
       </div>

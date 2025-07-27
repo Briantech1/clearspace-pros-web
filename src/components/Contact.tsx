@@ -17,11 +17,11 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            Get Your Free
+          Get Your
             <span className="text-clean-blue block">Cleaning Quote</span>
           </h2>
           <p className="text-xl text-clean-gray max-w-3xl mx-auto">
-            Ready to transform your workspace? Contact us today for a free, 
+            Ready to transform your workspace? Contact us today for a 
             no-obligation quote tailored to your specific needs.
           </p>
         </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                     <p className="text-clean-gray">For immediate assistance</p>
                   </div>
                 </div>
-                <p className="text-lg font-semibold text-navy">(555) 123-4567</p>
+                <p className="text-lg font-semibold text-navy">(443) 214-2467</p>
                 <p className="text-sm text-clean-gray">Available 24/7 for emergencies</p>
               </CardContent>
             </Card>
@@ -56,7 +56,7 @@ const Contact = () => {
                     <p className="text-clean-gray">For quotes and inquiries</p>
                   </div>
                 </div>
-                <p className="text-lg font-semibold text-navy">info@clearspacepros.com</p>
+                <p className="text-lg font-semibold text-navy">connect@clearspacepros.com</p>
                 <p className="text-sm text-clean-gray">We'll respond within 2 hours</p>
               </CardContent>
             </Card>
@@ -72,8 +72,8 @@ const Contact = () => {
                     <p className="text-clean-gray">Metro area coverage</p>
                   </div>
                 </div>
-                <p className="text-lg font-semibold text-navy">Greater Metropolitan Area</p>
-                <p className="text-sm text-clean-gray">50-mile radius service zone</p>
+                <p className="text-lg font-semibold text-navy">Baltimore County & Surrounding MD</p>
+                <p className="text-sm text-clean-gray">Maryland regions</p>
               </CardContent>
             </Card>
 
@@ -103,7 +103,7 @@ const Contact = () => {
               <CardContent className="p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <MessageSquare className="w-8 h-8 text-clean-blue" />
-                  <h3 className="text-2xl font-bold text-navy">Request Your Free Quote</h3>
+                  <h3 className="text-2xl font-bold text-navy">Request Your Quote</h3>
                 </div>
                 
                 <form className="space-y-6">
@@ -145,7 +145,7 @@ const Contact = () => {
                       </label>
                       <Input 
                         type="tel"
-                        placeholder="(555) 123-4567"
+                        placeholder="(443) 214-2467"
                         className="border-border focus:border-clean-blue focus:ring-clean-blue"
                       />
                     </div>
@@ -157,13 +157,12 @@ const Contact = () => {
                     </label>
                     <select className="w-full px-3 py-2 border border-border rounded-md focus:border-clean-blue focus:ring-clean-blue">
                       <option>Select service type</option>
-                      <option>Office Cleaning</option>
-                      <option>Retail Space Cleaning</option>
-                      <option>Medical Facility Cleaning</option>
-                      <option>Educational Center Cleaning</option>
-                      <option>Industrial Cleaning</option>
+                      <option>Commercial Office Cleaning</option>
                       <option>Post-Construction Cleanup</option>
-                      <option>Deep Cleaning</option>
+                      <option>Airbnb Turnover Cleaning</option>
+                      <option>High-Touch Disinfection</option>
+                      <option>Trash Removal & Debris Pickup</option>
+                      <option>Daily/Weekly/Biweekly Plans</option>
                       <option>Other</option>
                     </select>
                   </div>
@@ -185,7 +184,7 @@ const Contact = () => {
                       className="bg-gradient-accent hover:opacity-90 transition-opacity flex-1"
                     >
                       <Calendar className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      Request a Quote
                     </Button>
                     <Button 
                       type="button" 
