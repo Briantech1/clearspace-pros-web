@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Star } from "lucide-react";
 import heroImage from "@/assets/hero-office.jpg";
+import MarylandFlag from "../assets/maryland-flag.png.jpg";
 
 const Hero = () => {
   return (
@@ -20,13 +21,18 @@ const Hero = () => {
         <div className="max-w-4xl">
           <div className="mb-6">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="flex items-center space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <span className="text-white/90 text-sm">Trusted by 500+ businesses</span>
-            </div>
+  <img
+  src={MarylandFlag}
+  alt="Maryland Flag"
+  className="w-10 h-6 object-cover rounded"
+/>
+
+  <span className="text-white/90 text-lg">
+    Proudly serving Maryland businesses
+  </span>
+</div>
+
+
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Professional
@@ -44,9 +50,12 @@ const Hero = () => {
             <Button size="lg" className="bg-fresh-green hover:bg-fresh-green/90 text-white text-lg px-8 py-4 h-auto">
               Request a Quote
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white/30 hover:bg-white/10 text-lg px-8 py-4 h-auto">
-              Call (443) 214-2467
-            </Button>
+            <a
+  href="tel:4432142467"
+  className="text-white border border-white px-6 py-3 rounded-md text-lg font-medium hover:bg-white/10 transition duration-200 text-center inline-block"
+>
+  Call (443) 214-2467
+</a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl">
