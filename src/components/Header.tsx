@@ -37,13 +37,14 @@ const Header = () => {
             </div>
           </div>
           <a
-  href="https://clienthub.getjobber.com/booking/fac14cf0-4a4c-488c-a24d-04bad755b739/"
+  href="https://clienthub.getjobber.com/client_hubs/8b08d54f-b0f8-4a55-9aef-5bb6b4a24c11/public/work_request/new?source=social_media"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-gradient-accent hover:opacity-90 transition-opacity px-4 py-2 rounded text-white font-semibold"
+  className="inline-block bg-fresh-green hover:bg-fresh-green/90 text-white font-semibold px-4 py-2 rounded-md transition-colors"
 >
   Request a Quote
 </a>
+
 
         </div>
       </div>
