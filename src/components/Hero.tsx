@@ -50,13 +50,11 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a
-              href="https://clienthub.getjobber.com/client_hubs/8b08d54f-b0f8-4a55-9aef-5bb6b4a24c11/public/work_request/new?source=social_media"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-fresh-green hover:bg-fresh-green/90 text-white text-lg px-8 py-4 h-auto rounded-md text-center"
-            >
-              Request a Quote
-            </a>
+  href="/contact"
+  className="bg-fresh-green hover:bg-fresh-green/90 text-white text-lg px-8 py-4 h-auto rounded-md text-center"
+>
+  Request a Quote
+</a>
             <a
               href="tel:4432142467"
               className="text-white border border-white px-6 py-3 rounded-md text-lg font-medium hover:bg-white/10 transition duration-200 text-center inline-block"

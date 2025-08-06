@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import Contact from "./pages/Contact";
-
+import Newsletter from "./pages/Newsletter";
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/newsletter" element={<Newsletter />} /> {/* ✅ new route */}
       </Routes>
       <Footer />
     </>
