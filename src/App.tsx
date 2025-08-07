@@ -7,6 +7,13 @@ import Services from "./pages/Services";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import Contact from "./pages/Contact";
 import Newsletter from "./pages/Newsletter";
+import StandardCleaning from "./pages/StandardCleaning";
+import DeepCleaning from "./pages/DeepCleaning";
+import MoveOutCleaning from "./pages/MoveOutCleaning";
+import Residential from "./pages/Residential";
+import Commercial from "./pages/Commercial";
+import Airbnb from "./pages/Airbnb";
+
 function App() {
   return (
     <>
@@ -17,6 +24,12 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services/residential" element={<Residential />} />
+<Route path="/services/residential/standard" element={<StandardCleaning />} />
+<Route path="/services/residential/deep" element={<DeepCleaning />} />
+<Route path="/services/residential/move-out" element={<MoveOutCleaning />} />
+<Route path="/services/commercial" element={<Commercial />} />
+<Route path="/services/airbnb" element={<Airbnb />} />
         <Route path="/newsletter" element={<Newsletter />} /> {/* ✅ new route */}
       </Routes>
       <Footer />
