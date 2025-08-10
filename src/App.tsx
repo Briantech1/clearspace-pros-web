@@ -7,6 +7,7 @@ import Breadcrumbs from "./components/Breadcrumbs";
 import PageLoader from "./components/PageLoader";
 import Privacy from "./pages/Privacy";
 import FAQs from "./pages/FAQs";
+import CookieBanner from "./components/CookieBanner";
 
 
 // Lazy pages (split by route)
@@ -23,10 +24,12 @@ const WhyChooseUs = lazy(() => import("./pages/WhyChooseUs"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Newsletter = lazy(() => import("./pages/Newsletter"));
 
+
 export default function App() {
   return (
     <>
       <Header />
+      <CookieBanner />
       <Breadcrumbs />
       <Suspense fallback={<PageLoader />}>
         <Routes>

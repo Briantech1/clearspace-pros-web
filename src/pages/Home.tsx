@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
+import LeadModal from "../components/LeadModal";
 
 export default function Home() {
   const jsonLd = {
