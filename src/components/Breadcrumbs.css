@@ -1,0 +1,28 @@
+.breadcrumb {
+  font-size: 14px;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #333;
+  font-weight: 500;
+}
+
+.breadcrumb a::after {
+  content: " › ";
+  color: #888;
+}
+
+.breadcrumb a:last-of-type::after {
+  content: "";
+}

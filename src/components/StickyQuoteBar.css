@@ -1,0 +1,101 @@
+/* Floating quote CTA that slides up from the bottom-right.
+   Uses your design tokens defined in index.css (HSL variables). */
+
+.cs-quote-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px 10px 14px;
+  background: hsl(var(--navy));            /* matches site palette */
+  color: #fff;
+  border-radius: 9999px;                   /* pill */
+  box-shadow: 0 12px 30px hsla(215, 84%, 16%, 0.24);
+  transform: translateY(140%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 350ms ease, opacity 350ms ease;
+  z-index: 1000;                           /* stays above content, below any modals */
+}
+
+/* When ready to show */
+.cs-quote-fab.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Text */
+.cs-quote-fab .cs-text {
+  font-size: 14px;
+  line-height: 1.2;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+/* Primary action */
+.cs-quote-fab .cs-action {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  background: hsl(var(--clean-blue));      /* brand blue */
+  color: #fff;
+  transition: filter 160ms ease, transform 160ms ease, background 160ms ease;
+}
+
+.cs-quote-fab .cs-action:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  background: hsl(var(--navy-light));      /* slightly darker on hover */
+}
+
+/* Dismiss (X) button */
+.cs-quote-fab .cs-close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  border: none;
+  background: #fff;
+  color: hsl(var(--navy));
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 12px hsla(215, 84%, 16%, 0.25);
+}
+
+.cs-quote-fab .cs-close:hover {
+  filter: brightness(0.96);
+}
+
+/* Compact on small screens */
+@media (max-width: 480px) {
+  .cs-quote-fab {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 10px 10px 12px;
+  }
+  .cs-quote-fab .cs-text {
+    display: none; /* keep it clean like a chat bubble */
+  }
+  .cs-quote-fab .cs-action {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .cs-quote-fab {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
