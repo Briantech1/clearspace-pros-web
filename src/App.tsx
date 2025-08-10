@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Breadcrumbs from "./components/Breadcrumbs";
 import PageLoader from "./components/PageLoader";
+import Privacy from "./pages/Privacy";
+import FAQs from "./pages/FAQs";
+
 
 // Lazy pages (split by route)
 const Home = lazy(() => import("./pages/Home"));
@@ -39,6 +42,8 @@ export default function App() {
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/privacy" element={<Privacy />} />
+<Route path="/faqs" element={<FAQs />} />
         </Routes>
       </Suspense>
       <Footer />

@@ -21,7 +21,7 @@ const ContactPage = () => {
     <section className="bg-white py-12 px-4">
       <SEO
         title="Request a Quote | ClearSpace Pros LLC (Maryland)"
-        description="Tell us about your space and get a fast, accurate cleaning quote. Commercial, residential, Airbnb, and move‑in/move‑out service across Maryland."
+        description="Tell us about your space and get a fast, accurate cleaning quote. Commercial, residential, Airbnb, and move-in/move-out service across Maryland."
         canonical="https://your-domain.com/contact"
         jsonLd={jsonLd}
       />
@@ -48,7 +48,7 @@ const ContactPage = () => {
 
             <div>
               <p className="font-semibold">ClearSpace Pros LLC</p>
-              <p>14 Steeplejack Ct<br />Owings Mills, MD 21117</p>
+              <p><em>Based in Maryland — available by appointment only</em></p>
             </div>
             <p><strong>Email:</strong> connect@clearspacepros.com</p>
             <p><strong>Phone:</strong> (443) 214-2467</p>
@@ -62,7 +62,7 @@ const ContactPage = () => {
             <div className="border-t pt-4 mt-4 space-y-3">
               <h4 className="font-semibold text-base">Why Clients Choose Us</h4>
               <ul className="list-disc list-inside space-y-1">
-                <li>Insured & owner‑operated</li>
+                <li>Insured & owner-operated</li>
                 <li>Reliable scheduling</li>
                 <li>Trusted by property managers</li>
                 <li>100% Satisfaction Guarantee</li>
