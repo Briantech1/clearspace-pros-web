@@ -5,7 +5,6 @@ import { Instagram, Facebook, Twitter, ChevronRight } from "lucide-react";
 import Logo from "../assets/header-logo.png.jpg";
 import MarylandFlag from "../assets/maryland-flag.png.jpg";
 
-
 export default function Header() {
   // open/close state
   const [openRoot, setOpenRoot] = useState(false);            // “Services” dropdown
@@ -132,15 +131,14 @@ export default function Header() {
       <div className="flex justify-between items-center px-4 py-2 bg-clean-blue text-white text-sm">
         <div className="flex items-center space-x-2">
           <img
-  src={MarylandFlag}
-  alt="Maryland Flag"
-  className="w-10 h-6 object-cover rounded"
-  width={40}
-  height={24}
-  loading="lazy"
-  decoding="async"
-/>
-
+            src={MarylandFlag}
+            alt="Maryland Flag"
+            className="w-10 h-6 object-cover rounded"
+            width={40}
+            height={24}
+            loading="lazy"
+            decoding="async"
+          />
           <span className="text-white/90 text-sm md:text-base">Proudly Serving Maryland</span>
         </div>
         <div className="flex space-x-4 items-center">
@@ -149,7 +147,7 @@ export default function Header() {
           </a>
           <a href="#" aria-label="Facebook"><Facebook className="w-4 h-4" /></a>
           <a href="#" aria-label="Twitter"><Twitter className="w-4 h-4" /></a>
-          <Link to="/blog">Blog</Link>
+          {/* Removed Blog */}
           <Link to="/newsletter">Newsletter</Link>
         </div>
       </div>
@@ -306,12 +304,12 @@ export default function Header() {
 
           <li><Link to="/why-choose-us" className="text-navy hover:text-clean-blue" role="menuitem">Why Choose Us</Link></li>
           <li><Link to="/contact" className="text-navy hover:text-clean-blue" role="menuitem">Contact</Link></li>
-          <li><a href="#" className="text-navy hover:text-clean-blue" role="menuitem">Blog</a></li>
+          {/* Removed Blog */}
           <li><Link to="/newsletter" className="text-navy hover:text-clean-blue" role="menuitem">Newsletter</Link></li>
         </ul>
       </nav>
 
-      {/* Mobile Menu (unchanged) */}
+      {/* Mobile Menu (unchanged except Blog removed) */}
       <div className="md:hidden flex justify-end px-4 py-2 bg-white">
         <details className="relative">
           <summary className="cursor-pointer text-navy font-semibold">☰</summary>
@@ -320,7 +318,7 @@ export default function Header() {
             <Link to="/services" className="block px-4 py-2 text-navy hover:bg-clean-blue/10">Services</Link>
             <Link to="/why-choose-us" className="block px-4 py-2 text-navy hover:bg-clean-blue/10">Why Choose Us</Link>
             <Link to="/contact" className="block px-4 py-2 text-navy hover:bg-clean-blue/10">Contact</Link>
-            <a href="#" className="block px-4 py-2 text-navy hover:bg-clean-blue/10">Blog</a>
+            {/* Removed Blog */}
             <Link to="/newsletter" className="block px-4 py-2 text-navy hover:bg-clean-blue/10">Newsletter</Link>
           </div>
         </details>

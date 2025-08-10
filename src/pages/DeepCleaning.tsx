@@ -1,21 +1,49 @@
+import ServiceLayout from "../components/ServiceLayout";
 import SEO from "../components/SEO";
-import StickyQuoteBar from "../components/StickyQuoteBar";
 
 export default function DeepCleaning() {
   return (
     <>
       <SEO
-        title="Deep Cleaning Service | ClearSpace Pros"
-        description="Top‑to‑bottom detail clean for a fresh reset, including baseboards, fixtures, and hard‑to‑reach areas."
-        canonical="https://your-domain.com/services/residential/deep"
+        title="Deep Cleaning Services | ClearSpace Pros"
+        description="Detailed deep cleaning services in Maryland. Perfect for seasonal refreshes, pre-event prep, or post-construction cleanups."
+        keywords="deep cleaning, detailed cleaning, Maryland cleaning service, seasonal cleaning"
       />
-      <StickyQuoteBar />
-      <main className="p-8">
-        <h1 className="text-3xl font-bold text-navy">Deep Cleaning</h1>
-        <p className="mt-4 text-clean-gray">
-          A detailed clean that focuses on buildup, edges, and overlooked areas.
-        </p>
-      </main>
+      <ServiceLayout
+        kicker="Residential"
+        title="Deep Cleaning"
+        intro="Go beyond the basics with a meticulous, top-to-bottom clean that tackles dirt and grime in every corner."
+        benefits={[
+          "Thorough cleaning of all areas",
+          "High-touch surface sanitation",
+          "Attention to overlooked spaces"
+        ]}
+        sections={[
+          {
+            title: "Popular reasons to book",
+            points: [
+              "Seasonal refresh",
+              "Before hosting events",
+              "Post-construction dust removal"
+            ]
+          },
+          {
+            title: "Areas of focus",
+            points: [
+              "Baseboards & trim",
+              "Behind appliances",
+              "Ceiling fans & vents",
+              "Detailed bathroom scrubbing"
+            ]
+          }
+        ]}
+        faqs={[
+          {
+            q: "How long does a deep clean take?",
+            a: "Typically 4–8 hours depending on the size and condition of the property."
+          }
+        ]}
+      />
     </>
   );
 }

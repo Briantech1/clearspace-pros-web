@@ -1,21 +1,49 @@
+import ServiceLayout from "../components/ServiceLayout";
 import SEO from "../components/SEO";
-import StickyQuoteBar from "../components/StickyQuoteBar";
 
 export default function StandardCleaning() {
   return (
     <>
       <SEO
-        title="Standard Residential Cleaning | ClearSpace Pros"
-        description="Routine home cleaning covering kitchens, bathrooms, dusting, vacuuming, and mopping—scheduled to fit your life."
-        canonical="https://your-domain.com/services/residential/standard"
+        title="Standard Cleaning Services | ClearSpace Pros"
+        description="Regular upkeep for your home in Maryland. Keep your space fresh and inviting with our standard cleaning packages."
+        keywords="standard cleaning, regular cleaning, Maryland cleaning service, home cleaning"
       />
-      <StickyQuoteBar />
-      <main className="p-8">
-        <h1 className="text-3xl font-bold text-navy">Standard Cleaning</h1>
-        <p className="mt-4 text-clean-gray">
-          Recurring maintenance clean to keep your home fresh between deep cleans.
-        </p>
-      </main>
+      <ServiceLayout
+        kicker="Residential"
+        title="Standard Cleaning"
+        intro="Maintain a consistently clean home with our reliable standard cleaning service."
+        benefits={[
+          "Flexible scheduling",
+          "Consistent quality",
+          "Friendly, trusted staff"
+        ]}
+        sections={[
+          {
+            title: "What’s included",
+            points: [
+              "Dusting all surfaces",
+              "Vacuuming & mopping",
+              "Bathroom sanitation",
+              "Kitchen wipe-downs"
+            ]
+          },
+          {
+            title: "Great for",
+            points: [
+              "Weekly or bi-weekly maintenance",
+              "Busy households",
+              "Pet owners"
+            ]
+          }
+        ]}
+        faqs={[
+          {
+            q: "Can I combine with deep cleaning?",
+            a: "Yes, you can schedule an occasional deep clean alongside your regular service."
+          }
+        ]}
+      />
     </>
   );
 }

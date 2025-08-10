@@ -1,17 +1,18 @@
-import SEO from "../components/SEO";
-
-export default function WhyChooseUs() {
+// src/pages/About.tsx
+export default function About() {
   return (
-    <main className="p-10 text-left">
-      <SEO
-        title="Why Choose Us | ClearSpace Pros LLC"
-        description="Insured, reliable, and detail‑oriented cleaning. Learn what sets our Maryland cleaning service apart."
-        canonical="https://your-domain.com/why-choose-us"
-      />
-      <h1 className="text-3xl font-bold text-navy">Why Choose Us</h1>
-      <p className="mt-4 text-clean-gray">
-        Owner‑operated quality, responsive communication, and a satisfaction guarantee.
-      </p>
+    <main className="px-4 py-10">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl md:text-4xl font-bold text-navy">About ClearSpace Pros</h1>
+        <p className="mt-3 text-clean-gray">
+          ClearSpace Pros LLC is an owner‑operated cleaning company based in Maryland.
+          We specialize in recurring janitorial and residential services with responsive
+          communication and consistent results.
+        </p>
+        <p className="mt-3 text-clean-gray">
+          Licensed • Bonded • Insured • eMMA vendor registered.
+        </p>
+      </div>
     </main>
   );
 }
