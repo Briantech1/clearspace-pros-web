@@ -8,7 +8,7 @@ import PageLoader from "./components/PageLoader";
 import Privacy from "./pages/Privacy";
 import FAQs from "./pages/FAQs";
 import CookieBanner from "./components/CookieBanner";
-import LeadModal from "./components/LeadModal";
+
 
 // Lazy pages (split by route)
 const Home = lazy(() => import("./pages/Home"));
@@ -31,7 +31,6 @@ export default function App() {
       <Header />
       <CookieBanner />
       <Breadcrumbs />
-      <LeadModal />
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<Home />} />
