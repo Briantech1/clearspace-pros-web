@@ -67,7 +67,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-clean-blue" />
                 <div>
-                  <div className="font-medium">(443) 214-2467</div>
+                  <div className="font-medium">(667) 218-8008</div>
                   <div className="text-sm text-white/70">24/7 voicemail — fast callback</div>
                 </div>
               </div>

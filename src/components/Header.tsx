@@ -165,7 +165,7 @@ export default function Header() {
           />
         </Link>
         <p className="text-clean-blue text-sm mt-2">
-          <a href="tel:4432142467" className="hover:underline">CALL FOR MORE INFO: (443) 214-2467</a>
+          <a href="tel:6672188008" className="hover:underline">CALL FOR MORE INFO: (667) 218-8008</a>
         </p>
       </div>
 
