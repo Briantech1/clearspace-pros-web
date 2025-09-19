@@ -51,7 +51,7 @@ const ContactPage = () => {
               <p><em>Based in Maryland — available by appointment only</em></p>
             </div>
             <p><strong>Email:</strong> connect@clearspacepros.com</p>
-            <p><strong>Phone:</strong> (443) 214-2467</p>
+            <p><strong>Phone:</strong> (240) 233-4882</p>
             <p>
               <strong>Hours:</strong><br />
               Mon–Fri: 7am–7pm<br />

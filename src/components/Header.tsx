@@ -2,7 +2,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter, ChevronRight } from "lucide-react";
-import Logo from "../assets/header-logo.png.jpg";
+import Logo from "../assets/header-logo.png";
 import MarylandFlag from "../assets/maryland-flag.png.jpg";
 
 export default function Header() {
@@ -153,21 +153,22 @@ export default function Header() {
       </div>
 
       {/* Tier 2: Main Header */}
-      <div className="flex flex-col items-center justify-center py-4 bg-white border-b">
-        <Link to="/" className="block">
-          <img
-            src={Logo}
-            alt="ClearSpace Pros Logo"
-            className="h-8 md:h-7 w-auto"
-            width={160}
-            height={56}
-            loading="eager"
-          />
-        </Link>
-        <p className="text-clean-blue text-sm mt-2">
-          <a href="tel:6672188008" className="hover:underline">CALL FOR MORE INFO: (667) 218-8008</a>
-        </p>
-      </div>
+      <div className="flex flex-col items-center justify-center bg-white border-b h-28">
+  <Link to="/" className="block">
+    <img
+      src={Logo}
+      alt="ClearSpace Pros Logo"
+      className="max-h-23 w-auto object-contain"
+      loading="eager"
+    />
+  </Link>
+  <p className="text-clean-blue text-sm mt-1">
+    <a href="tel:2402334882" className="hover:underline">
+      CALL FOR MORE INFO: (240) 233-4882
+    </a>
+  </p>
+</div>
+
 
       {/* Navigation */}
       <nav className="hidden md:flex justify-center py-3 bg-white" role="navigation" aria-label="Main">

@@ -49,10 +49,10 @@ const Hero = () => {
 </a>
 
             <a
-              href="tel:6672188008"
+              href="tel:2402334882"
               className="text-white border border-white px-6 py-3 rounded-md text-lg font-medium hover:bg-white/10 transition duration-200 text-center inline-block"
             >
-              Call (667) 218-8008
+              Call (240) 233-4882
             </a>
           </div>
 
