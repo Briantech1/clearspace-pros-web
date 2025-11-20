@@ -1,0 +1,38 @@
+name: Deploy to CSP Staging
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build
+        run: npm run build
+      
+      - name: Deploy to Staging
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            dist/ \
+            brian@192.168.1.241:/var/www/clearspace-pros/
+      
+      - name: Deployment complete
+        run: |
+          echo "✅ Deployment successful!"
+          echo "🌐 Website: http://192.168.1.241"
