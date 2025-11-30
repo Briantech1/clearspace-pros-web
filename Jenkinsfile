@@ -36,7 +36,7 @@ pipeline {
                 echo '🚀 Deploying to staging...'
                 sh '''
                     rsync -avz --delete \
-                        -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+                        -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" \
                         dist/ \
                         brian@${STAGING_SERVER}:${DEPLOY_PATH}/
                 '''
